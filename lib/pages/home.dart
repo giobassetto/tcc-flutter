@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tccflutter/pages/benchmark.dart';
+import 'package:tccflutter/pages/mapa.dart';
 import './maingit.dart';
 import './camera.dart';
 
@@ -21,7 +22,7 @@ class HomePage extends StatelessWidget {
               ],
             )
           ), 
-          Container(margin: EdgeInsets.only(top: 80.0) , width: 350.0, height: 50.0, 
+          Container(margin: EdgeInsets.only(top: 60.0) , width: 350.0, height: 50.0, 
           child: RaisedButton(
                     onPressed: () => {
                       Navigator.push(
@@ -39,7 +40,7 @@ class HomePage extends StatelessWidget {
               ),
             ),
 
-          Container(margin: EdgeInsets.only(top: 60.0) , width: 350.0, height: 50.0,
+          Container(margin: EdgeInsets.only(top: 40.0) , width: 350.0, height: 50.0,
           child: RaisedButton(
                     onPressed: () => {
                       Navigator.push(
@@ -57,7 +58,7 @@ class HomePage extends StatelessWidget {
               ),
             ),
 
-          Container(margin: EdgeInsets.only(top: 60.0) , width: 350.0, height: 50.0,
+          Container(margin: EdgeInsets.only(top: 40.0) , width: 350.0, height: 50.0,
           child: RaisedButton(
                     onPressed: () => {
                       Navigator.push(
@@ -67,6 +68,23 @@ class HomePage extends StatelessWidget {
                     },
                     color: Colors.deepPurple[900],
                     child: Text('Teste de Benchmark', 
+                    textAlign: TextAlign.center, 
+                    style: TextStyle(color: Colors.white, fontFamily: 'Roboto',
+                    fontWeight: FontWeight.bold, fontSize: 18.0,
+                  ),
+                ),
+              ),
+            ),
+          Container(margin: EdgeInsets.only(top: 40.0) , width: 350.0, height: 50.0,
+          child: RaisedButton(
+                    onPressed: () => {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => MapaPage()),
+                      )
+                    },
+                    color: Colors.deepPurple[900],
+                    child: Text('Localização', 
                     textAlign: TextAlign.center, 
                     style: TextStyle(color: Colors.white, fontFamily: 'Roboto',
                     fontWeight: FontWeight.bold, fontSize: 18.0,

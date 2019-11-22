@@ -28,6 +28,8 @@ dependencies:
   loading: ^1.0.1
   shared_preferences: ^0.5.3
   image_picker:
+  google_maps_flutter:
+  location:
 
 dev_dependencies:
   flutter_test:
