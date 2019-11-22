@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tccflutter/pages/benchmark.dart';
 import './maingit.dart';
 import './camera.dart';
 
@@ -58,7 +59,12 @@ class HomePage extends StatelessWidget {
 
           Container(margin: EdgeInsets.only(top: 60.0) , width: 350.0, height: 50.0,
           child: RaisedButton(
-                    onPressed: () => {},
+                    onPressed: () => {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Benchmark()),
+                      )
+                    },
                     color: Colors.deepPurple[900],
                     child: Text('Teste de Benchmark', 
                     textAlign: TextAlign.center, 
